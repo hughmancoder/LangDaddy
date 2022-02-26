@@ -4,28 +4,42 @@
 * Authors: Javad, Hugh, Mitchell, Edward, Lachlan, Archer
 
 
-Colour codes
+### Colour codes ###
 -yellow: #e8d3a3
 -orange: #ffa633
 -blue: #3b5a9d
 -light green: #4fb2aa
 
 ## To-Do ##
-    - [ ] hard code basic features
-    - [ ] 20 word sample
-    - [ ] empty chrome extension on store
-    - [ ] Read text on any website
+    - [ ] submit button calls method on JS side to call language dictionary (<form action="/DOTHIS.js" method="METHOD HERE">)
+    - [ ] Highlight button working -> choose to highlight/unHighlight text
+    - [ ] Highlight colour changed to yellow (matches theme)
+    - [ ] 
+    - [ ]
+    - [ ]
 
-Day 1:
+## completed ##
+    - [x] hard code basic features
+    - [x] 20 word sample
+    - [x] empty chrome extension on store
+    - [x] Read text on any website
+
+
+## Saturday: ##
     - Lachlan: created empty file on chrome store
-    - Mitchell: created basic chrome extension file structure
+    - Mitchel: created basic chrome extension file structure
+    - Hugh/Mitchel added buttons and develop popdown menu interface
+    - Javad logo and graphic design 
+    - submit button added action required
+    
         
 
-Day 2:
-    -
+## Sunday: ##
+    - Edward: voice over, video script, interface prototype working
 
 ## Extensions ##
-- 
-
-Linguix
+- inverse language button (replaces english word with foreign language instead of foreign langauge word with English word)
+- dark theme
+- flash cards built in on word list
+- wordle miniGame
 

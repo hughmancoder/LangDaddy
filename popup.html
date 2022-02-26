@@ -8,48 +8,50 @@
 <body>
   <img id="title" src="images/icon.svg" />
   <p>
-    Hugh you can add some stuff here :) <br />
-    this is a test to of more text <br />
-    adding more text <br />
-    rules
-
+    Welcome to <br />
+    LangDaddy <br />
   </p>
-  <hr class="solid" />
+  <!-- <hr class="solid" /> -->
   <div class="row">
-    <span class="boldtext">Enabled</span>
+    <span class="boldtext">&nbsp; Enabled</span>
     <label class="switch">
       <input type="checkbox" />
       <span class="slider round"></span>
     </label>
   </div>
-  <hr class="solid" />
+  <!-- <hr class="solid" /> horizontal line -->
   <div class="row">
-    <span>Inverse language</span>
+    <span class = "boldtext">&nbsp; Highlight</span>
     <label class="switch">
       <input type="checkbox" />
       <span class="slider round"></span>
     </label>
   </div>
 
-  <hr class="solid" />
+  <!-- <hr class="solid" /> -->
 
-  <div class="row">
-    <label for="languages">Language</label>
-
+  <!-- added submit button here -->
+  <div id="Form"> <!-- creats a new row through flex container-->
+    <form action="/action_page.php" method="get"> 
+    <!-- &nbsp; gets tab -->
+    <p id = "boldCentered">&nbsp; Choose a language</p> <!-- check for= syntax: for=languages"--> 
+    <br>
     <select name="languages" id="languages" class="storage">
       <option value="Spanish">Spanish</option>
       <option value="French">French</option>
       <option value="Chinese">Chinese</option>
       <option value="German">German</option>
     </select>
+    <input type = "submit" value = "Submit"> 
+    </form> 
   </div>
-  <hr class="solid" />
+
+
+  <!-- <hr class="solid" /> -->
   <!-- <p>Your Words</p> -->
   <button id="cache">Your words</button>
-  <button id="stats">Stats</button>
+  <!-- <button id="stats">Display Stats</button> -->
   <!-- <a href="https://google.com">google</a> -->
-
-
   <script src="popup.js"></script>
 </body>
 
