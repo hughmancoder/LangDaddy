@@ -78,7 +78,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 #title{
-    width: 42%;
+    width: 5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
