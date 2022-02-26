@@ -14,6 +14,18 @@ body {
   font-size: 14px;
   font-family: "Lexend", sans-serif;
 }
+#logo {
+  width: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome{
+  font-weight: bold;
+  text-align: center;
+  font-size:  24px;
+}
 
 .row {
   align-items: center; /*vertical alignment */
@@ -96,13 +108,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-#title {
-  width: 5rem;
-  display: block;
-  font-size:  16px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #cache {
   background-color: #ffa633; /* Green */
   border: none;
@@ -134,3 +140,48 @@ input:checked + .slider:before {
 .boldtext {
   font-weight: bold;  
 }
+/* creating button groups */
+/* .Button{
+  background-color: #ffa633;
+  border-color: #ffa633;
+  font-size: 14px;
+  box-shadow: none;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+}
+
+.Button button:hover {
+  background-color: #d3d3d3;
+} */
+
+.btn-group button {
+  background-color: #ffa633; /* Green background */
+  border: 1px solid #ffa633;
+  /* border-radius: 42px; */
+  color: rgb(242, 242, 242); /* White text */
+  padding: 8px 21px;
+  align-items: center;
+  text-size-adjust: 14px;
+  cursor: pointer; /*Pointer/hand icon */
+  float: left;  /*the buttons side by side*/
+  font-size: 14px;
+  font-family: "Lexend", sans-serif;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #d3d3d3;
+}
+
