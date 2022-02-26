@@ -10,10 +10,10 @@
     - [ ] Read text on any website
 
 Day 1:
-    * Lachlan: created empty file on chrome store
+    - Lachlan: created empty file on chrome store
 
 Day 2:
-    *
+    -
 
 ## Extensions ##
 - 
