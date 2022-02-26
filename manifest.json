@@ -16,5 +16,9 @@
             "js": ["content.js"],
             "css": ["content.css"]
         }
-    ]
+    ],
+    "web_accessible_resources": [{
+        "resources": ["words.json"],
+        "matches": ["<all_urls>"]
+    }]
 }
