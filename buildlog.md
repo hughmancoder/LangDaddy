@@ -12,6 +12,7 @@
 Day 1:
     - Lachlan: created empty file on chrome store
     - Mitchell: created basic chrome extension file structure
+        
 
 Day 2:
     -
