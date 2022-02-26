@@ -1,0 +1,20 @@
+{
+    "name": "LangDaddy",
+    "description": "Learn a language through the total immersion method, based off of the total immersion method.",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ]
+}
