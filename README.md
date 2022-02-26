@@ -1,5 +1,5 @@
 # UNIHACK2022 #
-## Languix ##
+## LangDaddy ##
 - A browser extension that helps you learn a foreign language through exposure by randomly substituting English words for that of a language of your choice across the web – whether it be in news articles, social media posts or your favorite maths papers. 
 ## Sources ##
 - https://developer.chrome.com/docs/extensions/mv3/getstarted/      
