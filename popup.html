@@ -6,11 +6,11 @@
 </head>
 
 <body>
-  <img id="title" src="images/icon.svg" />
-  <p>
+  <img id="logo" src="images/icon.svg" />
+  <h1 id = "title">
     Welcome to <br />
     LangDaddy <br />
-  </p>
+  </h1>
   <!-- <hr class="solid" /> -->
   <div class="row">
     <span class="boldtext">&nbsp; Enabled</span>
@@ -36,7 +36,7 @@
     <!-- &nbsp; gets tab -->
     <h1 id = "boldCentered"> Choose a language</h1> <!-- check for= syntax: for=languages"--> 
     <br>
-    <select name="languages" id="languages">
+    <select name="languages" style = "text-align: center")>
       <option value="Spanish">Spanish</option>
       <option value="French">French</option>
       <option value="Chinese">Chinese</option>
@@ -48,11 +48,17 @@
 
 
   <!-- <hr class="solid" /> -->
-  <!-- <p>Your Words</p> -->
-  <br>
-  <button id="cache">Your words</button>
-  <!-- <button id="stats">Display Stats</button> -->
-  <!-- <a href="https://google.com">google</a> -->
+    <div class="btn-group">
+      <button>Your words</button>
+      <button>Stats</button>
+    </div>
+
+  <!-- <footer>
+    <p>UNIHACK 2022 | X AE A-12<br>
+  </footer> -->
+  
+  <!-- <button id="cache">Your words</button> -->
+
   <script src="popup.js"></script>
 </body>
 
