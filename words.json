@@ -1,0 +1,602 @@
+{
+   "time": {
+      "French": "temps",
+      "Spanish": "hora",
+      "Chinese": "时间",
+      "German": "Zeit"
+   },
+   "year": {
+      "French": "an",
+      "Spanish": "año",
+      "Chinese": "年",
+      "German": "Jahr"
+   },
+   "people": {
+      "French": "gens",
+      "Spanish": "gente",
+      "Chinese": "人们",
+      "German": "Menschen"
+   },
+   "way": {
+      "French": "façon",
+      "Spanish": "manera",
+      "Chinese": "大大地",
+      "German": "Weg"
+   },
+   "day": {
+      "French": "journée",
+      "Spanish": "día",
+      "Chinese": "日",
+      "German": "Tag"
+   },
+   "man": {
+      "French": "homme",
+      "Spanish": "hombre",
+      "Chinese": "人",
+      "German": "Mann"
+   },
+   "thing": {
+      "French": "chose",
+      "Spanish": "cosa",
+      "Chinese": "事物",
+      "German": "Ding"
+   },
+   "woman": {
+      "French": "femme",
+      "Spanish": "mujer",
+      "Chinese": "女士",
+      "German": "Frau"
+   },
+   "life": {
+      "French": "la vie",
+      "Spanish": "la vida",
+      "Chinese": "生活",
+      "German": "Leben"
+   },
+   "child": {
+      "French": "enfant",
+      "Spanish": "niño",
+      "Chinese": "孩子",
+      "German": "Kind"
+   },
+   "world": {
+      "French": "monde",
+      "Spanish": "mundo",
+      "Chinese": "世界",
+      "German": "Welt"
+   },
+   "school": {
+      "French": "l'école",
+      "Spanish": "colegio",
+      "Chinese": "学校",
+      "German": "Schule"
+   },
+   "state": {
+      "French": "Etat",
+      "Spanish": "estado",
+      "Chinese": "状态",
+      "German": "Zustand"
+   },
+   "family": {
+      "French": "famille",
+      "Spanish": "familia",
+      "Chinese": "家庭",
+      "German": "Familie"
+   },
+   "student": {
+      "French": "élève",
+      "Spanish": "estudiante",
+      "Chinese": "学生",
+      "German": "Schüler"
+   },
+   "group": {
+      "French": "grouper",
+      "Spanish": "grupo",
+      "Chinese": "团体",
+      "German": "Gruppe"
+   },
+   "country": {
+      "French": "de campagne",
+      "Spanish": "país",
+      "Chinese": "国家",
+      "German": "Land"
+   },
+   "problem": {
+      "French": "problème",
+      "Spanish": "problema",
+      "Chinese": "问题",
+      "German": "Problem"
+   },
+   "hand": {
+      "French": "main",
+      "Spanish": "mano",
+      "Chinese": "手",
+      "German": "Hand"
+   },
+   "part": {
+      "French": "partie",
+      "Spanish": "parte",
+      "Chinese": "部分",
+      "German": "Teil"
+   },
+   "place": {
+      "French": "lieu",
+      "Spanish": "lugar",
+      "Chinese": "地方",
+      "German": "Ort"
+   },
+   "case": {
+      "French": "Cas",
+      "Spanish": "caso",
+      "Chinese": "案子",
+      "German": "Fall"
+   },
+   "week": {
+      "French": "semaine",
+      "Spanish": "semana",
+      "Chinese": "星期",
+      "German": "Woche"
+   },
+   "company": {
+      "French": "entreprise",
+      "Spanish": "empresa",
+      "Chinese": "公司",
+      "German": "Gesellschaft"
+   },
+   "system": {
+      "French": "système",
+      "Spanish": "sistema",
+      "Chinese": "系统",
+      "German": "System"
+   },
+   "program": {
+      "French": "programme",
+      "Spanish": "programa",
+      "Chinese": "程序",
+      "German": "Programm"
+   },
+   "question": {
+      "French": "question",
+      "Spanish": "pregunta",
+      "Chinese": "题",
+      "German": "Frage"
+   },
+   "work": {
+      "French": "travailler",
+      "Spanish": "trabajo",
+      "Chinese": "工作",
+      "German": "Arbeit"
+   },
+   "government": {
+      "French": "gouvernement",
+      "Spanish": "Gobierno",
+      "Chinese": "政府",
+      "German": "Regierung"
+   },
+   "number": {
+      "French": "numéro",
+      "Spanish": "número",
+      "Chinese": "数字",
+      "German": "Anzahl"
+   },
+   "night": {
+      "French": "nuit",
+      "Spanish": "noche",
+      "Chinese": "夜晚",
+      "German": "Nacht"
+   },
+   "point": {
+      "French": "indiquer",
+      "Spanish": "punto",
+      "Chinese": "观点",
+      "German": "Punkt"
+   },
+   "home": {
+      "French": "domicile",
+      "Spanish": "casa",
+      "Chinese": "家",
+      "German": "Zuhause"
+   },
+   "water": {
+      "French": "l'eau",
+      "Spanish": "agua",
+      "Chinese": "水",
+      "German": "Wasser"
+   },
+   "room": {
+      "French": "salle",
+      "Spanish": "habitación",
+      "Chinese": "房间",
+      "German": "Zimmer"
+   },
+   "mother": {
+      "French": "mère",
+      "Spanish": "madre",
+      "Chinese": "母亲",
+      "German": "Mutter"
+   },
+   "area": {
+      "French": "région",
+      "Spanish": "área",
+      "Chinese": "区域",
+      "German": "Bereich"
+   },
+   "money": {
+      "French": "de l'argent",
+      "Spanish": "dinero",
+      "Chinese": "钱",
+      "German": "Geld"
+   },
+   "story": {
+      "French": "récit",
+      "Spanish": "historia",
+      "Chinese": "故事",
+      "German": "Geschichte"
+   },
+   "fact": {
+      "French": "fait",
+      "Spanish": "hecho",
+      "Chinese": "事实",
+      "German": "Tatsache"
+   },
+   "month": {
+      "French": "mois",
+      "Spanish": "mes",
+      "Chinese": "月",
+      "German": "Monat"
+   },
+   "lot": {
+      "French": "parcelle",
+      "Spanish": "lote",
+      "Chinese": "很多",
+      "German": "viel"
+   },
+   "right": {
+      "French": "droit",
+      "Spanish": "Correcto",
+      "Chinese": "正确的",
+      "German": "rechts"
+   },
+   "study": {
+      "French": "étude",
+      "Spanish": "estudio",
+      "Chinese": "学习",
+      "German": "lernen"
+   },
+   "book": {
+      "French": "livre",
+      "Spanish": "libro",
+      "Chinese": "书",
+      "German": "Buchen"
+   },
+   "eye": {
+      "French": "œil",
+      "Spanish": "ojo",
+      "Chinese": "眼睛",
+      "German": "Auge"
+   },
+   "job": {
+      "French": "travail",
+      "Spanish": "trabajo",
+      "Chinese": "工作",
+      "German": "Arbeit"
+   },
+   "word": {
+      "French": "mot",
+      "Spanish": "palabra",
+      "Chinese": "单词",
+      "German": "Wort"
+   },
+   "business": {
+      "French": "affaires",
+      "Spanish": "negocio",
+      "Chinese": "商业",
+      "German": "Unternehmen"
+   },
+   "issue": {
+      "French": "publier",
+      "Spanish": "asunto",
+      "Chinese": "问题",
+      "German": "Ausgabe"
+   },
+   "side": {
+      "French": "côté",
+      "Spanish": "lado",
+      "Chinese": "边",
+      "German": "Seite"
+   },
+   "kind": {
+      "French": "type",
+      "Spanish": "tipo",
+      "Chinese": "种类",
+      "German": "Art"
+   },
+   "head": {
+      "French": "diriger",
+      "Spanish": "cabeza",
+      "Chinese": "头",
+      "German": "Kopf"
+   },
+   "house": {
+      "French": "loger",
+      "Spanish": "casa",
+      "Chinese": "屋",
+      "German": "Haus"
+   },
+   "service": {
+      "French": "service",
+      "Spanish": "Servicio",
+      "Chinese": "服务",
+      "German": "Bedienung"
+   },
+   "friend": {
+      "French": "amie",
+      "Spanish": "amigo",
+      "Chinese": "friend",
+      "German": "Freundin"
+   },
+   "father": {
+      "French": "père",
+      "Spanish": "padre",
+      "Chinese": "父亲",
+      "German": "Vater"
+   },
+   "power": {
+      "French": "Puissance",
+      "Spanish": "energía",
+      "Chinese": "力量",
+      "German": "Energie"
+   },
+   "hour": {
+      "French": "heure",
+      "Spanish": "hora",
+      "Chinese": "小时",
+      "German": "Stunde"
+   },
+   "game": {
+      "French": "Jeu",
+      "Spanish": "juego",
+      "Chinese": "游戏",
+      "German": "Spiel"
+   },
+   "line": {
+      "French": "ligne",
+      "Spanish": "línea",
+      "Chinese": "线",
+      "German": "Linie"
+   },
+   "end": {
+      "French": "finir",
+      "Spanish": "final",
+      "Chinese": "结尾",
+      "German": "Ende"
+   },
+   "member": {
+      "French": "membre",
+      "Spanish": "miembro",
+      "Chinese": "成员",
+      "German": "Mitglied"
+   },
+   "law": {
+      "French": "droit",
+      "Spanish": "ley",
+      "Chinese": "法律",
+      "German": "Gesetz"
+   },
+   "car": {
+      "French": "auto",
+      "Spanish": "coche",
+      "Chinese": "车",
+      "German": "Wagen"
+   },
+   "city": {
+      "French": "ville",
+      "Spanish": "ciudad",
+      "Chinese": "城市",
+      "German": "Stadt"
+   },
+   "community": {
+      "French": "communauté",
+      "Spanish": "comunidad",
+      "Chinese": "社区",
+      "German": "Gemeinschaft"
+   },
+   "name": {
+      "French": "Nom",
+      "Spanish": "nombre",
+      "Chinese": "姓名",
+      "German": "Name"
+   },
+   "president": {
+      "French": "Président",
+      "Spanish": "presidente",
+      "Chinese": "总统",
+      "German": "Präsident"
+   },
+   "team": {
+      "French": "équipe",
+      "Spanish": "equipo",
+      "Chinese": "团队",
+      "German": "Mannschaft"
+   },
+   "minute": {
+      "French": "minute",
+      "Spanish": "minuto",
+      "Chinese": "分钟",
+      "German": "Minute"
+   },
+   "idea": {
+      "French": "idée",
+      "Spanish": "idea",
+      "Chinese": "主意",
+      "German": "Idee"
+   },
+   "kid": {
+      "French": "enfant",
+      "Spanish": "niño",
+      "Chinese": "孩子",
+      "German": "Kind"
+   },
+   "body": {
+      "French": "corps",
+      "Spanish": "cuerpo",
+      "Chinese": "身体",
+      "German": "Karosserie"
+   },
+   "information": {
+      "French": "information",
+      "Spanish": "información",
+      "Chinese": "信息",
+      "German": "Information"
+   },
+   "back": {
+      "French": "arrière",
+      "Spanish": "espalda",
+      "Chinese": "背部",
+      "German": "zurück"
+   },
+   "parent": {
+      "French": "parent",
+      "Spanish": "padre",
+      "Chinese": "父母",
+      "German": "Elternteil"
+   },
+   "face": {
+      "French": "visage",
+      "Spanish": "rostro",
+      "Chinese": "脸",
+      "German": "Gesicht"
+   },
+   "others": {
+      "French": "les autres",
+      "Spanish": "otros",
+      "Chinese": "其他",
+      "German": "Andere"
+   },
+   "level": {
+      "French": "niveau",
+      "Spanish": "nivel",
+      "Chinese": "等级",
+      "German": "Stufe"
+   },
+   "office": {
+      "French": "Bureau",
+      "Spanish": "oficina",
+      "Chinese": "办公室",
+      "German": "Büro"
+   },
+   "door": {
+      "French": "porte",
+      "Spanish": "puerta",
+      "Chinese": "门",
+      "German": "Tür"
+   },
+   "health": {
+      "French": "santé",
+      "Spanish": "salud",
+      "Chinese": "健康",
+      "German": "die Gesundheit"
+   },
+   "person": {
+      "French": "la personne",
+      "Spanish": "persona",
+      "Chinese": "人",
+      "German": "Person"
+   },
+   "art": {
+      "French": "art",
+      "Spanish": "Arte",
+      "Chinese": "艺术",
+      "German": "Kunst"
+   },
+   "war": {
+      "French": "guerre",
+      "Spanish": "guerra",
+      "Chinese": "战争",
+      "German": "Krieg"
+   },
+   "history": {
+      "French": "l'histoire",
+      "Spanish": "historia",
+      "Chinese": "历史",
+      "German": "Geschichte"
+   },
+   "party": {
+      "French": "fête",
+      "Spanish": "fiesta",
+      "Chinese": "派对",
+      "German": "Gruppe"
+   },
+   "result": {
+      "French": "résultat",
+      "Spanish": "resultado",
+      "Chinese": "结果",
+      "German": "Ergebnis"
+   },
+   "change": {
+      "French": "changement",
+      "Spanish": "cambiar",
+      "Chinese": "改变",
+      "German": "Veränderung"
+   },
+   "morning": {
+      "French": "Matin",
+      "Spanish": "Mañana",
+      "Chinese": "早晨",
+      "German": "Morgen"
+   },
+   "reason": {
+      "French": "raison",
+      "Spanish": "razón",
+      "Chinese": "原因",
+      "German": "Grund"
+   },
+   "research": {
+      "French": "recherche",
+      "Spanish": "investigación",
+      "Chinese": "研究",
+      "German": "Forschung"
+   },
+   "girl": {
+      "French": "fille",
+      "Spanish": "niña",
+      "Chinese": "女孩",
+      "German": "Mädchen"
+   },
+   "guy": {
+      "French": "mec",
+      "Spanish": "chico",
+      "Chinese": "guy",
+      "German": "Kerl"
+   },
+   "moment": {
+      "French": "moment",
+      "Spanish": "momento",
+      "Chinese": "片刻",
+      "German": "Moment"
+   },
+   "air": {
+      "French": "air",
+      "Spanish": "aire",
+      "Chinese": "空气",
+      "German": "Luft"
+   },
+   "teacher": {
+      "French": "prof",
+      "Spanish": "profesor",
+      "Chinese": "老师",
+      "German": "Lehrer"
+   },
+   "force": {
+      "French": "Obliger",
+      "Spanish": "fuerza",
+      "Chinese": "力量",
+      "German": "Gewalt"
+   },
+   "education": {
+      "French": "éducation",
+      "Spanish": "educación",
+      "Chinese": "教育",
+      "German": "Ausbildung"
+   }
+}
