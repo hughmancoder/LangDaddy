@@ -13,43 +13,45 @@
   </p>
   <!-- <hr class="solid" /> -->
   <div class="row">
-    <span class="boldtext">&nbsp; Enabled</span>
+    <span class="boldtext">Enabled</span>
     <label class="switch">
-      <input type="checkbox" />
+      <input type="checkbox" id="enabled" class="storage" />
       <span class="slider round"></span>
     </label>
   </div>
   <!-- <hr class="solid" /> horizontal line -->
   <div class="row">
-    <span class = "boldtext">&nbsp; Highlight</span>
+    <span class="boldtext">Highlight</span>
     <label class="switch">
-      <input type="checkbox" />
+      <input type="checkbox" id="highlight" class="storage" />
       <span class="slider round"></span>
     </label>
   </div>
 
-  <!-- <hr class="solid" /> -->
-
   <!-- added submit button here -->
-  <div id="Form"> <!-- creats a new row through flex container-->
-    <form action="/action_page.php" method="get"> 
+  <div class="row">
+    <!-- creats a new row through flex container-->
     <!-- &nbsp; gets tab -->
-    <h1 id = "boldCentered"> Choose a language</h1> <!-- check for= syntax: for=languages"--> 
-    <br>
-    <select name="languages" id="languages">
+    <label class="boldtext" for="language">Language</label>
+    <select name="language" id="language" class="storage">
       <option value="Spanish">Spanish</option>
       <option value="French">French</option>
       <option value="Chinese">Chinese</option>
       <option value="German">German</option>
     </select>
-    <input type = "submit" value = "Submit"> 
-    </form> 
+  </div>
+
+  <div class="row">
+    <span class="boldtext">Word chance</span>
+    <div>
+      <input type="number" min="1" max="100" value="20" id="wordchance" class="storage" />
+      <span>%</span>
+    </div>
   </div>
 
 
   <!-- <hr class="solid" /> -->
   <!-- <p>Your Words</p> -->
-  <br>
   <button id="cache">Your words</button>
   <!-- <button id="stats">Display Stats</button> -->
   <!-- <a href="https://google.com">google</a> -->

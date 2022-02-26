@@ -43,3 +43,27 @@ function collectData() {
     data[el.id] = el.type === 'checkbox' ? el.checked : el.value; 
   return data;
 }
+
+function doSave() {
+  chrome.storage.sync.set({autoSave: collectData()});
+}
+
+function loadFromStorage() {
+  chrome.storage.sync.get(data => {
+    if (data.autoSave) data = data.autoSave;
+    for (const [id, value] of Object.entries(data)) {
+      const el = document.getElementById(id);
+      if (el) el[el.type === 'checkbox' ? 'checked' : 'value'] = value;
+    }
+  });
+}
+
+loadFromStorage();
+
+document.getElementById("wordchance").addEventListener("input", ({target}) => {
+  if (target.value > 100) {
+    target.value = 100
+  } else if (target.value < 1) {
+    target.value = 1
+  }
+})

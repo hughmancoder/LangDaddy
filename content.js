@@ -1,51 +1,76 @@
-const url = chrome.runtime.getURL('words.json');
-let jsonData;
+chrome.storage.sync.get(({ autoSave }) => {
+  const url = chrome.runtime.getURL('words.json');
+  let hoverTimer;
+  let jsonData = {};
 
-fetch(url)
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
+  if (autoSave.enabled) {
+    fetch(url)
+      .then(
+        function (response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' +
+              response.status);
+            return;
+          }
 
-      // Examine the text in the response
-      response.json().then(function(data) {
-        console.log(data);
-        jsonData = data
-        chrome.storage.sync.get("language", ({language}) => {
-          // alert(language)
-          translateRandomWords(language)
-        })
+          // Examine the text in the response
+          response.json().then(function (data) {
+            jsonData = data
+            translateRandomWords()
+          });
+        }
+      )
+      .catch(function (err) {
+        console.log('Fetch Error :-S', err);
+      });
+  }
+
+  function translateRandomWords() {
+    const text = document.querySelectorAll('p')
+    let classes = autoSave.highlight ? "translatedhighlight translated" : "translated"
+    for (let i = 0; i < text.length; i++) {
+      Object.keys(jsonData).forEach(x => {
+        let regex = new RegExp(`\\b${x}\\b`, "i")
+        let lastIndex = 0
+        let translatedText = text[i].innerHTML
+
+        while (true) {
+          let start = translatedText.substring(0, lastIndex)
+          let end = translatedText.substring(lastIndex)
+          let index = end.search(regex)
+          if (index == -1) {
+            break;
+          }
+          lastIndex = index
+          if (Math.random() <= autoSave.wordchance / 100) {
+            end = end.replace(regex, `<span class="${classes}">${jsonData[x][autoSave.language]}</span>`)
+            lastIndex += `<span class="${classes}">${jsonData[x][autoSave.language]}</span>`.length
+          } else {
+            lastIndex += x.length
+          }
+          translatedText = start + end
+        }
+        text[i].innerHTML = translatedText
       });
     }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
-
-
-function translateRandomWords(lang){
-    const text = document.querySelectorAll('p, li, td, caption, span')
-
-    for (let i = 0; i < text.length; i++) {
-        var random = getRndInteger(0,1)
-        if (random == 2){
-            continue
-        } else {
-            Object.keys(jsonData).forEach(x => {
-                if (text[i].innerHTML.includes(" " + x + " " || " " + x + ".")){
-                    console.log("matched word: " + x)
-                    console.log(jsonData[x][lang])
-                    text[i].innerHTML = text[i].innerHTML.replace(x, `<span class="translated">${jsonData[x][lang]}</span>`)
-                }
-            });
-        }
-        // text[i].innerHTML = text[i].innerHTML.replace(/\b(car)\b/i, `<span class="translated">auto</span>`)
+    for (element of document.getElementsByClassName("translated")) {
+      let word = element.innerText
+      element.addEventListener("mouseenter", ({ target }) => {
+        hoverTimer = setTimeout(() => {
+          const popup = document.createElement("div")
+          popup.classList.add("langpopup")
+          popup.innerText = getReverseTranslation(word)
+          target.appendChild(popup)
+        }, 500)
+      })
+      element.addEventListener("mouseleave", ({ target }) => {
+        clearTimeout(hoverTimer)
+        target.innerText = word
+      })
     }
-}
+  }
 
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+  function getReverseTranslation(word) {
+    return Object.keys(jsonData).find(key => jsonData[key][autoSave.language] === word);
+  }
+})
