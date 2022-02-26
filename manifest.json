@@ -1,24 +1,33 @@
 {
-    "name": "LangDaddy",
-    "description": "Learn a language through the total immersion method, based off of the total immersion method.",
-    "version": "0.0.1",
-    "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
+  "name": "LangDaddy",
+  "description": "Learn a language through the total immersion method, based off of the total immersion method.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "images/O_logo_16x16.png",
+      "24": "images/O_logo_24x24.png",
+      "32": "images/O_logo_32x32.png"
     },
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": ["*://*/*"],
-            "js": ["content.js"],
-            "css": ["content.css"]
-        }
-    ],
-    "web_accessible_resources": [{
-        "resources": ["words.json"],
-        "matches": ["<all_urls>"]
-    }]
+
+    "default_title": "LangDaddy",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["words.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

@@ -2,36 +2,53 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
-  <img id="title" src="icon.svg">
-  <p>Hugh you can add some stuff here :)
-    <br> this is a test to of more text
-    <br> adding more text
-    <br> rules
-  </p>
+  <img id="title" src="images/icon.svg" />
+  <p>
+    Hugh you can add some stuff here :) <br />
+    this is a test to of more text <br />
+    adding more text <br />
+    rules
 
-  <div class="container">
+  </p>
+  <hr class="solid" />
+  <div class="row">
+    <span class="boldtext">Enabled</span>
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" />
       <span class="slider round"></span>
     </label>
-    <p>hello</p>
-    <button>ahsosdoahdas</button>
-    <a href="https://google.com">google</a>
-    <div>
-      <label for="languages">Language</label>
-
-      <select name="languages" id="languages">
-        <option value="spanish">Spanish</option>
-        <option value="french">French</option>
-        <option value="chinese">Chinese</option>
-        <option value="german">German</option>
-      </select>
-    </div>
   </div>
+  <hr class="solid" />
+  <div class="row">
+    <span>Inverse language</span>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <hr class="solid" />
+
+  <div class="row">
+    <label for="languages">Language</label>
+
+    <select name="languages" id="languages" class="storage">
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+      <option value="Chinese">Chinese</option>
+      <option value="German">German</option>
+    </select>
+  </div>
+  <hr class="solid" />
+  <!-- <p>Your Words</p> -->
+  <button id="cache">Your words</button>
+  <button id="stats">Stats</button>
+  <!-- <a href="https://google.com">google</a> -->
+
 
   <script src="popup.js"></script>
 </body>

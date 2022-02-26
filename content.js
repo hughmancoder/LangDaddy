@@ -14,7 +14,10 @@ fetch(url)
       response.json().then(function(data) {
         console.log(data);
         jsonData = data
-        translateRandomWords("Chinese")
+        chrome.storage.sync.get("language", ({language}) => {
+          // alert(language)
+          translateRandomWords(language)
+        })
       });
     }
   )
@@ -24,7 +27,7 @@ fetch(url)
 
 
 function translateRandomWords(lang){
-    const text = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, caption, span')
+    const text = document.querySelectorAll('p, li, td, caption, span')
 
     for (let i = 0; i < text.length; i++) {
         var random = getRndInteger(0,1)
@@ -35,11 +38,11 @@ function translateRandomWords(lang){
                 if (text[i].innerHTML.includes(" " + x + " " || " " + x + ".")){
                     console.log("matched word: " + x)
                     console.log(jsonData[x][lang])
-                    text[i].innerHTML = text[i].innerHTML.replace(x, jsonData[x][lang])
+                    text[i].innerHTML = text[i].innerHTML.replace(x, `<span class="translated">${jsonData[x][lang]}</span>`)
                 }
             });
         }
-        text[i].innerHTML = text[i].innerHTML.replace(/\b(car)\b/i, `<span class="translated">auto</span>`)
+        // text[i].innerHTML = text[i].innerHTML.replace(/\b(car)\b/i, `<span class="translated">auto</span>`)
     }
 }
 
