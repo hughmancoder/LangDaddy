@@ -27,8 +27,6 @@ const STORAGE_SELECTOR = '.storage[id]';
 let debounceTimer;
 
 document.addEventListener('change', saveOnChange);
-document.addEventListener('input', saveOnChange);
-
 
 function saveOnChange(e) {
   if (e.target.closest(STORAGE_SELECTOR)) {
@@ -44,8 +42,9 @@ function collectData() {
   return data;
 }
 
-function doSave() {
-  chrome.storage.sync.set({autoSave: collectData()});
+async function doSave() {
+  await chrome.storage.sync.set({autoSave: collectData()});
+  chrome.tabs.reload(function(){});
 }
 
 function loadFromStorage() {
@@ -60,7 +59,7 @@ function loadFromStorage() {
 
 loadFromStorage();
 
-document.getElementById("wordchance").addEventListener("input", ({target}) => {
+document.getElementById("wordchance").addEventListener("change", ({target}) => {
   if (target.value > 100) {
     target.value = 100
   } else if (target.value < 1) {
