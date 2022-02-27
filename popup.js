@@ -66,3 +66,25 @@ document.getElementById("wordchance").addEventListener("change", ({target}) => {
     target.value = 1
   }
 })
+
+const url = chrome.runtime.getURL('words.json');
+  let hoverTimer;
+
+    fetch(url)
+      .then(
+        function (response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' +
+              response.status);
+            return;
+          }
+
+          // Examine the text in the response
+          response.json().then(function (data) {
+            document.getElementById("words").value = Object.keys(data).join("\n")
+          });
+        }
+      )
+      .catch(function (err) {
+        console.log('Fetch Error :-S', err);
+      });
