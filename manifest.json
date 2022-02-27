@@ -6,7 +6,12 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
+  "icons": {
+    "16": "images/O_logo_16x16.png",
+    "24": "images/O_logo_24x24.png",
+    "32": "images/O_logo_32x32.png"
+  },
   "action": {
     "default_icon": {
       "16": "images/O_logo_16x16.png",
