@@ -1,13 +1,16 @@
-# UNIHACK2022 #
-## LangDaddy ##
+# UNIHACK2022 
+
+## LangDaddy 
 - A browser extension that helps you learn a foreign language through exposure by randomly substituting English words for that of a language of your choice across the web – whether it be in news articles, social media posts or your favorite maths papers. 
-## Sources ##
-**Product script**
-- https://docs.google.com/document/d/1Nfh_btSvAC3-ak8AAT9qzK4yBzAo8r62VwopyZxz1_U/edit
+
+## Authors
+- https://github.com/mitchpk
+- https://github.com/hughmancoder
 
 
 **Tutorial**
-- https://developer.chrome.com/docs/extensions/mv3/getstarted/      
+- https://developer.chrome.com/docs/extensions/mv3/getstarted/
+- 
 ## Features: ##
 - chrome extension
 - double/right-click on the word to add it to the list
