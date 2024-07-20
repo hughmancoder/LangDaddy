@@ -6,15 +6,15 @@
 
 ## Layout
 
-!['1'](/images/1.png)
+![1](/images/img1.png)
 
 ## Settings
 
-!['2'](/images/2.png)
+![2](/images/img2.png)
 
 ## Translation
 
-!['3'](/images/3.png)
+![3](/images/img3.png)
 
 ## Features
 
